@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - "node"
 cache: npm
-before_install: npm -i now
+before_install: npm install -g now
 script: now --local-config=now.json --token $NOW_TOKEN --docker
 after_script: now alias --token=$NOW_TOKEN
 env:
